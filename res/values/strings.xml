@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="my_teams">My Teams</string>
+    <string name="add">ADD</string>
+    <string name="games">Games</string>
+    <string name="stats">Stats</string>
+    <string name="bg_bottom">bg bottom</string>
+    <string name="bg_top">bg top</string>
+    <string name="throwaway">t\nh\nr\no\nw\na\nw\na\ny</string>
+</resources>

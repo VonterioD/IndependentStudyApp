@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playGameScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/p1Pick"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pick Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p2Pick"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="236dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pick Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p3Pick"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="304dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pick Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p4Pick"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="372dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pick Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p5Pick"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="444dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pick Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p6Pick"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="516dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pick Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p7Pick"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="584dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pick Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/defender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="620dp"
+        android:text="Defender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/defenseThrowaway"
+        android:layout_width="47dp"
+        android:layout_height="462dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="132dp"
+        android:background="@android:drawable/btn_default"
+        android:orientation="horizontal"
+        android:text="@string/throwaway"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/p1D"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:drawable/btn_default"
+        android:text="D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/undoEvent"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="644dp"
+        android:background="@android:drawable/btn_default"
+        android:text="undo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/gameOver"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="680dp"
+        android:background="@android:drawable/btn_default"
+        android:text="gameOver"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/theyScored"
+        android:layout_width="102dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="328dp"
+        android:background="@android:drawable/btn_default"
+        android:text="They Scored"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p2D"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="236dp"
+        android:background="@android:drawable/btn_default"
+        android:text="D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p3D"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="304dp"
+        android:background="@android:drawable/btn_default"
+        android:text="D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p4D"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="372dp"
+        android:background="@android:drawable/btn_default"
+        android:text="D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p5D"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="444dp"
+        android:background="@android:drawable/btn_default"
+        android:text="D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p6D"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="516dp"
+        android:background="@android:drawable/btn_default"
+        android:text="D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p7D"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="584dp"
+        android:background="@android:drawable/btn_default"
+        android:text="D"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p1Pull"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pull"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p2Pull"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="236dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pull"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p3Pull"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="304dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pull"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p4Pull"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="372dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pull"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p5Pull"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="444dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pull"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p6Pull"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="516dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pull"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p7Pull"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="584dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Pull"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p7Catch"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="584dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Catch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p7Goal"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="584dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p7Drop"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="584dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Drop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p6Catch"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="516dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Catch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p6Goal"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="516dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p6Drop"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="516dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Drop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p5Catch"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="444dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Catch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p5Goal"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="444dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p5Drop"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="444dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Drop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p1Catch"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Catch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p1Drop"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Drop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p1Goal"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="168dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p4Catch"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="372dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Catch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p4Drop"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="372dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Drop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p3Catch"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="304dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Catch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p3Goal"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="304dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p3Drop"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="304dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Drop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p2Catch"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="236dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Catch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p2Goal"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="236dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p4Goal"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="372dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Goal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/p2Drop"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="236dp"
+        android:background="@android:drawable/btn_default"
+        android:text="Drop"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currScore"
+        android:layout_width="180dp"
+        android:layout_height="33dp"
+        android:text="Score"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <Button
+        android:id="@+id/currStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Stats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="560dp"
+        android:text="p1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="144dp"
+        android:text="p7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="212dp"
+        android:text="p6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="284dp"
+        android:text="p5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="356dp"
+        android:text="p4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="424dp"
+        android:text="p3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="492dp"
+        android:text="p2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="616dp"
+        android:text="Receiver"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/passer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="616dp"
+        android:text="Passer"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/throwaway"
+        android:layout_width="47dp"
+        android:layout_height="462dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="128dp"
+        android:background="@android:drawable/btn_default"
+        android:orientation="horizontal"
+        android:text="@string/throwaway"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/eventHolder"
+        android:layout_width="333dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/event1Detail"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/event1"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/event2Detail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/event2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/event3Detail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/event3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/whoseDisc"
+        android:layout_width="156dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="332dp"
+        android:gravity="center"
+        android:text="Who Picked Up The Disc?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
